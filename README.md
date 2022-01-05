@@ -14,10 +14,10 @@ Just compile and link using
 
 5c lps25h.c
 5l lps25h.5
-...and that will default to give a 5.out executable.
+and that will default to give a 5.out executable.
 
 7c and 7l for arm64 on 9Front.
 
-See the datasheet for more info on the chip;
+See the datasheet for more info on the chip
 https://www.st.com/en/mems-and-sensors/lps25h.html
 
