@@ -43,7 +43,7 @@ initchip(int fd)
 {
 
 	/* 0x20 is the register to initialize the chip */
-	/* 0x90 turns on chip and set refresh to 25Hz  */
+	/* 0x30 turns on chip and set refresh to 25Hz  */
 	/* using pread and pwrite with an offset of 0  */
 	/* gives better results for poking registers   */
 
