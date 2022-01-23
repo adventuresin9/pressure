@@ -43,14 +43,14 @@ initchip(int fd)
 {
 
 	/* 0x20 is the register to initialize the chip */
-	/* 0x46 turns on chip and set refresh to 7Hz   */
+	/* 0xA0 turns on chip and set refresh to 7Hz   */
 	/* using pread and pwrite with an offset of 0  */
 	/* gives better results for poking registers   */
 
 	uchar buf[2];
 
 	buf[0] = 0x20;
-	buf[1] = 0x46;
+	buf[1] = 0xA0;
 
 	if((pwrite(fd, buf, 2, 0)) < 0)
 		sysfatal("initchip failed");
